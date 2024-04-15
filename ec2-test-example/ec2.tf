@@ -1,5 +1,5 @@
 module "roboshop_ec2_mongo" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "Mongo"
@@ -16,7 +16,7 @@ module "roboshop_ec2_mongo" {
 }
 
 module "roboshop_ec2_catalogue" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "catalogue"
@@ -33,7 +33,7 @@ module "roboshop_ec2_catalogue" {
 }
 
 module "roboshop_ec2_user" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "user"
@@ -50,7 +50,7 @@ module "roboshop_ec2_user" {
 }
 
 module "roboshop_ec2_redis" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "redis"
@@ -67,7 +67,7 @@ module "roboshop_ec2_redis" {
 }
 
 module "roboshop_ec2_cart" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "cart"
@@ -84,7 +84,7 @@ module "roboshop_ec2_cart" {
 }
 
 module "roboshop_ec2_mysql" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "mysql"
@@ -101,7 +101,7 @@ module "roboshop_ec2_mysql" {
 }
 
 module "roboshop_ec2_shipping" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "shipping"
@@ -118,7 +118,7 @@ module "roboshop_ec2_shipping" {
 }
 
 module "roboshop_ec2_payment" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "payment"
@@ -135,7 +135,7 @@ module "roboshop_ec2_payment" {
 }
 
 module "roboshop_ec2_rabbit" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "rabbit"
@@ -152,7 +152,7 @@ module "roboshop_ec2_rabbit" {
 }
 
 module "roboshop_ec2_web" {
-    source = "../ec2-module"
+    source = "github.com/vasu9100/Terraform-Ec2-Module.git?ref=main"
     is_route_required = true
     ami_id = data.aws_ami.devops_practice_ami.id
     instance_name = "web"
