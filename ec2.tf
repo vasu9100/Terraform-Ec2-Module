@@ -6,7 +6,7 @@ resource "aws_instance" "roboshop_ec2" {
   associate_public_ip_address = var.public_ip_enable
   user_data = var.user_data_script_path
   tags =merge(var.common_tags,{
-    Name = local.instance_name
+    Name = var.instance_name
     App = var.app
     Role = var.role
     Environment = var.environment
