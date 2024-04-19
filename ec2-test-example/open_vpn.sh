@@ -1,5 +1,5 @@
 #!/bin/bash
-# non-interactive or headless installation
+# Non-interactive or headless installation
 export AUTO_INSTALL=y
 export ENDPOINT=$(curl http://169.254.169.254/latest/meta-data/public-ipv4)
 export APPROVE_INSTALL=y
@@ -12,6 +12,12 @@ export COMPRESSION_ENABLED=n
 export CUSTOMIZE_ENC=n
 export CLIENT=devops76s
 export PASS=1
-curl -O https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
+
+# Download OpenVPN installation script
+curl -sSL -o openvpn-install.sh https://raw.githubusercontent.com/angristan/openvpn-install/master/openvpn-install.sh
+
+# Set execution permission for the downloaded script
 chmod +x openvpn-install.sh
+
+# Execute OpenVPN installation script
 ./openvpn-install.sh
