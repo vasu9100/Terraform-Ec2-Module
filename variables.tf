@@ -96,5 +96,16 @@ variable "user_data_script_path" {
 
 }
 
+variable "iam_instance_profile" {
+    type = string
+    default = null
+}
+
+variable "is_instance_profile_attached"{
+    type = bool
+    default = false
+}
+
+
 
 
